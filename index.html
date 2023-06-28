@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>HOME</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header class="header">
+            <div class="header__inner">
+                <div class="container">
+                    <div class="header__wrapper">
+
+                        <div class="header__main">
+
+                            <div class="header__burger">
+                                <strong></strong>
+                            </div>
+                            <div class="header__logo">
+                                <a href="#">
+                                    <img src="images/logo.svg" alt="Logotype">
+                                </a>
+                            </div>
+                            <div class="header__catalog">
+                                Каталог
+                            </div>
+                            <div class="header__search">
+                                <form action="#">
+                                    <input type="text" placeholder="Пошук...">
+                                    <button></button>
+                                </form>
+                            </div>
+                            <div class="header__location">
+                                Ка́м'яне́ць-Поді́льський
+                            </div>
+
+                        </div>
+
+                        <div class="header__side">
+
+                            <div class="shopping-list">
+                                <img src="images/shopping-list-icon.svg" alt="Shopping icon">
+                            </div>
+                            <div class="basket">
+                                <div class="basket__icon">
+                                    <img src="images/basket-icon.svg" alt="Basket icon">
+                                </div>
+                                <div class="basket__counter">0</div>
+                            </div>
+                            <div class="profile">
+                                <img src="images/profile-icon.svg" alt="Profile icon">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="cabinet">
+
+                <div class="cabinet__side">
+                    <div class="cabinet__side-close-button">
+                        <button>
+                            <img src="images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="cabinet__side-title">
+                        <h2 class="title">
+                            Особистий кабінет
+                        </h2>
+                    </div>
+                    <div class="cabinet__side-list">
+                        <div class="item item--active" id="reservation">
+                            <div class="item-title">
+                                <a href="#">МОЇ БРОНІ</a>
+                            </div>
+                        </div>
+                        <div class="item item--open" id="list-product">
+                            <div class="item-title">
+                                <a href="#">МОЇ СПИСКИ ТОВАРІВ</a>
+                            </div>
+                            <div class="item-content">
+                                <div class="item-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                ПЕРЕГЛЯНУТІ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                РАНІШЕ БРОНЮВАЛИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                ОБРАНІ ТОВАРИ <span id="product-counter">0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-button">
+                                    <button>Створити новий список</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" id="my-shop">
+                            <div class="item-title">
+                                <a href="#">МОЇ АПТЕКИ</a>
+                            </div>
+                        </div>
+                        <div class="item" id="personal-data">
+                            <div class="item-title">
+                                <a href="#">ОСОБИСТІ ДАНІ ТА НАЛАШТУВАНЯ</a>
+                            </div>
+                        </div>
+                        <div class="item" id="exit">
+                            <div class="item-title">
+                                <a href="#">ВИХІД</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cabinet__main">
+                    <div class="cabinet__main-back-button">
+                        <button>Мої броні</button>
+                    </div>
+                    <div class="cabinet__main-open-button">
+                        <button>
+                            <img src="images/left-arrow.svg" alt="">
+                            <span>
+                                Особистий кабінет
+                            </span>
+                        </button>
+                    </div>
+                    <div class="cabinet__main-title">
+                        <h2 class="title">
+                            Мої броні
+                        </h2>
+                    </div>
+                    <div class="cabinet__list">
+                        <div class="item">
+                            <div class="item-wrapper">
+                                <div class="item-mobile-card item-slide">
+                                    <div class="card-top">
+                                        <div class="card-top__info">
+                                            <div class="card-top__info-wrapper">
+                                                <div class="card-top__info-label">
+                                                    Бронь створено
+                                                </div>
+                                                <div class="card-top__info-time">
+                                                    04.04.2023 в 09:45
+                                                </div>
+                                            </div>
+                                            <div class="card-top__info-list">
+                                                <ul>
+                                                    <li>
+                                                        №122010210,
+                                                    </li>
+                                                    <li>
+                                                        №122010212,
+                                                    </li>
+                                                    <li>
+                                                        №122010213
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-top__button">
+                                            <button>
+                                                <img src="images/card-button.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-message">
+                                        Назвіть додаткові номери бронювань для отримання рецептурних товарів
+                                    </div>
+                                    <div class="card-confirm-message">
+                                        Бронь передано аптеці, очікуйте підтвердження
+                                    </div>
+                                    <div class="card-place">
+                                        <ul>
+                                            <li>
+                                                Аптека TAS
+                                                <div class="tooltip">
+                                                    <div class="tooltip-icon">
+                                                        <img src="images/tooltip-icon.svg" alt="Tooltip icon">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                Відчинено до 21:00
+                                            </li>
+                                            <li>
+                                                вул. Саперно-Слобідська 10, Київ
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-products">
+                                        <div class="card-product">
+                                            <div class="card-product__id">№122010210:</div>
+                                            <div class="card-product__name">Магнікор, таб. №30</div>
+                                        </div>
+                                        <div class="card-product">
+                                            <div class="card-product__id">№122010213 (за рецептом):</div>
+                                            <div class="card-product__name">Каптопрес-дарница табл. 50мг/25мг №20</div>
+                                        </div>
+                                        <div class="card-product">
+                                            <div class="card-product__id">№122010213 (за рецептом):</div>
+                                            <div class="card-product__name">Каптопрес-дарница табл. 50мг/25мг №20</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-desktop-card item-slide">
+                                    <div class="item-header">
+
+                                        <div class="item-header__info">
+                                            <div class="item-header__info-top">
+                                                <div class="item-header__info-label">
+                                                    Бронь створено
+                                                </div>
+                                                <div class="item-header__info-time">
+                                                    04.04.2023 в 09:45
+                                                </div>
+                                            </div>
+                                            <div class="item-header__info-list-id">
+                                                <ul>
+                                                    <li>
+                                                        №122010210,
+                                                    </li>
+                                                    <li>
+                                                        №122010212,
+                                                    </li>
+                                                    <li>
+                                                        №122010213
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__about">
+                                            <div class="item-header__about-item">
+                                                Аптека TAS
+                                                <div class="tooltip">
+                                                    <div class="tooltip-icon">
+                                                        <img src="images/tooltip-icon.svg" alt="Tooltip icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-header__about-item">
+                                                Відчинено до 21:00
+                                            </div>
+                                            <div class="item-header__about-item">
+                                                вул. Саперно-Слобідська 10, Київ
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__product">
+                                            <div class="item-header__product-wrapper">
+                                                <div class="item-header__product-count">
+                                                    2 товара
+                                                </div>
+                                                <div class="item-header__product-price">
+                                                    89,70 грн
+                                                </div>
+                                            </div>
+                                            <div class="item-header__product-button">
+                                                <button>
+                                                    <img src="images/arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__message">
+                                            <div class="item-header__message-text">
+                                                Назвіть додаткові номери бронювань для отримання рецептурних товарів
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__confirm-message">
+                                            Бронь передано аптеці, очікуйте підтвердження
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item-body">
+                                        <div class="item-body__wrapper">
+                                            <div class="item-body__products">
+                                                <div class="products-list">
+                                                    <div class="product">
+                                                        <div class="product-id">№122010210</div>
+                                                        <div class="product-wrapper">
+                                                            <div class="product-img">
+                                                                <img src="images/product-img.png" alt="">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <div class="product-info__name">
+                                                                    Магнікор, таб. №30
+                                                                </div>
+                                                                <div class="product-info__place">
+                                                                    Киевский витаминный завод
+                                                                </div>
+                                                                <div class="product-info__status">
+                                                                    <div class="product-info__status-label"></div>
+                                                                </div>
+                                                                <div class="product-info__counter">
+                                                                    1 упаковка
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span>79</span>.77 грн
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-id">№122010212</div>
+                                                        <div class="product-wrapper">
+                                                            <div class="product-img">
+                                                                <img src="images/product-img.png" alt="">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <div class="product-info__name">
+                                                                    Каптопрес-дарница табл.
+                                                                    50мг/25мг №20
+                                                                </div>
+                                                                <div class="product-info__place">
+                                                                    Дарница чао (украина, киев)
+                                                                </div>
+                                                                <div class="product-info__status">
+                                                                    <div class="product-info__status-label">
+                                                                        ЗА РЕЦЕПТОМ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-info__counter">
+                                                                    1 упаковка
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span>79</span>.77 грн
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-id">№122010213</div>
+                                                        <div class="product-wrapper">
+                                                            <div class="product-img">
+                                                                <img src="images/product-img.png" alt="">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <div class="product-info__name">
+                                                                    Каптопрес-дарница табл.
+                                                                    50мг/25мг №20
+                                                                </div>
+                                                                <div class="product-info__place">
+                                                                    Дарница чао (украина, киев)
+                                                                </div>
+                                                                <div class="product-info__status">
+                                                                    <div class="product-info__status-label">
+                                                                        ЗА РЕЦЕПТОМ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-info__counter">
+                                                                    1 упаковка
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span>79</span>.77 грн
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="products-footer">
+                                                    <div class="products-footer__title">
+                                                        Всього:
+                                                    </div>
+                                                    <div class="products-footer__sum">
+                                                        <strong>79</strong>.77 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-body__way">
+                                                <div class="item-body__way-steps">
+                                                    <div class="item-body__way-step step--active">
+                                                        <div class="item-body__way-step-title">
+                                                            <h4>
+                                                                Бронь створено 04.04.2023 09:43:41
+                                                            </h4>
+                                                        </div>
+                                                        <div class="item-body__way-step-message">
+                                                            Бронь передано аптеці,
+                                                            очікуйте підтвердження
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-body__way-step">
+                                                        <div class="item-body__way-step-title">
+                                                            <h4>
+                                                                Обробка
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-body__way-step">
+                                                        <div class="item-body__way-step-title">
+                                                            <h4>
+                                                                Очікує вас
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-body__way-button">
+                                                    <button id="cancel">
+                                                        ВІДМІНИТИ
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrapper">
+                                <div class="item-mobile-card item-slide">
+                                    <div class="card-top">
+                                        <div class="card-top__info">
+                                            <div class="card-top__info-wrapper">
+                                                <div class="card-top__info-label">
+                                                    Бронь створено
+                                                </div>
+                                                <div class="card-top__info-time">
+                                                    04.04.2023 в 09:45
+                                                </div>
+                                            </div>
+                                            <div class="card-top__info-list">
+                                                <ul>
+                                                    <li>
+                                                        №122010210,
+                                                    </li>
+                                                    <li>
+                                                        №122010212,
+                                                    </li>
+                                                    <li>
+                                                        №122010213
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-top__button">
+                                            <button>
+                                                <img src="images/card-button.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-message">
+                                        Назвіть додаткові номери бронювань для отримання рецептурних товарів
+                                    </div>
+                                    <div class="card-confirm-message">
+                                        Бронь передано аптеці, очікуйте підтвердження
+                                    </div>
+                                    <div class="card-place">
+                                        <ul>
+                                            <li>
+                                                Аптека TAS
+                                                <div class="tooltip">
+                                                    <div class="tooltip-icon">
+                                                        <img src="images/tooltip-icon.svg" alt="Tooltip icon">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                Відчинено до 21:00
+                                            </li>
+                                            <li>
+                                                вул. Саперно-Слобідська 10, Київ
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-products">
+                                        <div class="card-product">
+                                            <div class="card-product__id">№122010210:</div>
+                                            <div class="card-product__name">Магнікор, таб. №30</div>
+                                        </div>
+                                        <div class="card-product">
+                                            <div class="card-product__id">№122010213 (за рецептом):</div>
+                                            <div class="card-product__name">Каптопрес-дарница табл. 50мг/25мг №20</div>
+                                        </div>
+                                        <div class="card-product">
+                                            <div class="card-product__id">№122010213 (за рецептом):</div>
+                                            <div class="card-product__name">Каптопрес-дарница табл. 50мг/25мг №20</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-desktop-card item-slide">
+                                    <div class="item-header">
+
+                                        <div class="item-header__info">
+                                            <div class="item-header__info-top">
+                                                <div class="item-header__info-label">
+                                                    Бронь створено
+                                                </div>
+                                                <div class="item-header__info-time">
+                                                    04.04.2023 в 09:45
+                                                </div>
+                                            </div>
+                                            <div class="item-header__info-list-id">
+                                                <ul>
+                                                    <li>
+                                                        №122010210,
+                                                    </li>
+                                                    <li>
+                                                        №122010212,
+                                                    </li>
+                                                    <li>
+                                                        №122010213
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__about">
+                                            <div class="item-header__about-item">
+                                                Аптека TAS
+                                                <div class="tooltip">
+                                                    <div class="tooltip-icon">
+                                                        <img src="images/tooltip-icon.svg" alt="Tooltip icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-header__about-item">
+                                                Відчинено до 21:00
+                                            </div>
+                                            <div class="item-header__about-item">
+                                                вул. Саперно-Слобідська 10, Київ
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__product">
+                                            <div class="item-header__product-wrapper">
+                                                <div class="item-header__product-count">
+                                                    2 товара
+                                                </div>
+                                                <div class="item-header__product-price">
+                                                    89,70 грн
+                                                </div>
+                                            </div>
+                                            <div class="item-header__product-button">
+                                                <button>
+                                                    <img src="images/arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__message">
+                                            <div class="item-header__message-text">
+                                                Назвіть додаткові номери бронювань для отримання рецептурних товарів
+                                            </div>
+                                        </div>
+
+                                        <div class="item-header__confirm-message">
+                                            Бронь передано аптеці, очікуйте підтвердження
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item-body">
+                                        <div class="item-body__wrapper">
+                                            <div class="item-body__products">
+                                                <div class="products-list">
+                                                    <div class="product">
+                                                        <div class="product-id">№122010210</div>
+                                                        <div class="product-wrapper">
+                                                            <div class="product-img">
+                                                                <img src="images/product-img.png" alt="">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <div class="product-info__name">
+                                                                    Магнікор, таб. №30
+                                                                </div>
+                                                                <div class="product-info__place">
+                                                                    Киевский витаминный завод
+                                                                </div>
+                                                                <div class="product-info__status">
+                                                                    <div class="product-info__status-label"></div>
+                                                                </div>
+                                                                <div class="product-info__counter">
+                                                                    1 упаковка
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span>79</span>.77 грн
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-id">№122010212</div>
+                                                        <div class="product-wrapper">
+                                                            <div class="product-img">
+                                                                <img src="images/product-img.png" alt="">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <div class="product-info__name">
+                                                                    Каптопрес-дарница табл.
+                                                                    50мг/25мг №20
+                                                                </div>
+                                                                <div class="product-info__place">
+                                                                    Дарница чао (украина, киев)
+                                                                </div>
+                                                                <div class="product-info__status">
+                                                                    <div class="product-info__status-label">
+                                                                        ЗА РЕЦЕПТОМ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-info__counter">
+                                                                    1 упаковка
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span>79</span>.77 грн
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-id">№122010213</div>
+                                                        <div class="product-wrapper">
+                                                            <div class="product-img">
+                                                                <img src="images/product-img.png" alt="">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <div class="product-info__name">
+                                                                    Каптопрес-дарница табл.
+                                                                    50мг/25мг №20
+                                                                </div>
+                                                                <div class="product-info__place">
+                                                                    Дарница чао (украина, киев)
+                                                                </div>
+                                                                <div class="product-info__status">
+                                                                    <div class="product-info__status-label">
+                                                                        ЗА РЕЦЕПТОМ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-info__counter">
+                                                                    1 упаковка
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span>79</span>.77 грн
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="products-footer">
+                                                    <div class="products-footer__title">
+                                                        Всього:
+                                                    </div>
+                                                    <div class="products-footer__sum">
+                                                        <strong>79</strong>.77 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-body__way">
+                                                <div class="item-body__way-steps">
+                                                    <div class="item-body__way-step step--active">
+                                                        <div class="item-body__way-step-title">
+                                                            <h4>
+                                                                Бронь створено 04.04.2023 09:43:41
+                                                            </h4>
+                                                        </div>
+                                                        <div class="item-body__way-step-message">
+                                                            Бронь передано аптеці,
+                                                            очікуйте підтвердження
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-body__way-step">
+                                                        <div class="item-body__way-step-title">
+                                                            <h4>
+                                                                Обробка
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-body__way-step">
+                                                        <div class="item-body__way-step-title">
+                                                            <h4>
+                                                                Очікує вас
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-body__way-button">
+                                                    <button id="cancel">
+                                                        ВІДМІНИТИ
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="container">
+
+                    <div class="footer__title">
+                        <h2>
+                            Самолікування може бути шкідливим для вашого здоров'я
+                        </h2>
+                    </div>
+
+                    <div class="footer__wrapper">
+                        <div class="footer__navigation">
+                            <div class="navigation__item">
+                                <div class="navigation__item-list">
+                                    <h3 class="title">
+                                        Користувачам
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Аптеки поблизу
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Доставка і оплата
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Умови повернення
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Розширений пошук
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Новини партнерів
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Політика конфіденційності
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Угода користувача
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="navigation__item-list">
+                                    <h3 class="title">
+                                        МОВА ІНТЕРФЕЙСУ
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Українська
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Російська
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navigation__item">
+                                <div class="navigation__item-list">
+                                    <h3 class="title">
+                                        Інформація
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Про нас
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Редакторська команда
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                ЗМІ про нас
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Про бронювання
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Контакти
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Зворотній звязок
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Блог
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Наші партнери
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navigation__item">
+                                <div class="navigation__item-list">
+                                    <h3 class="title">
+                                        Партнерам
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Розмістити аптеку
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Особистий кабінет аптеки
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Політика щодо реклами і спонсорства
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="navigation__item-list">
+                                    <h3 class="title">
+                                        Фахівцям
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Розмістити аптеку
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Особистий кабінет аптеки
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Політика щодо реклами і спонсорства
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__info-item footer__info-item--app">
+                                <div class="footer__info-item-title">
+                                    <h3 class="title">
+                                        Наші додатки
+                                    </h3>
+                                </div>
+                                <div class="footer__info-item-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/footer-app-1.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/footer-app-2.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/footer-app-3.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__info-item footer__info-item--patner">
+                                <div class="footer__info-item-title">
+                                    <h3 class="title">
+                                        ПАРТНЕРИ
+                                    </h3>
+                                </div>
+                                <div class="footer__info-item-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/footer-partners-1.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/footer-partners-2.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__contact">
+                        Зворотній звязок: <a href="mailto:info@tabletki.ua">info@tabletki.ua</a>
+                    </div>
+
+                    <div class="footer__copy">
+                        © ТОВ «МТПК», 2010-2023<br>
+                        Tabletki.ua - агрегатор аптек, медичних препаратів, товарів для гігієни, здоров'я та краси
+                    </div>
+
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="images/footer-logo.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
